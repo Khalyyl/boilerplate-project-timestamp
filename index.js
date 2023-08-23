@@ -37,8 +37,7 @@ app.get("/api/:date?", (req, res) => {
   let isValidDate = Date.parse(input);
 
   /*  b.isValidUnixNumber
-        to check if input is string with whole number(no symbol or character in the middle of input) -> 
-        it must be valid unix (source : https://benjaminsemah.com/build-timestamp-microservice)
+        to check if input is string with whole number(no symbol or character in the middle of input)
   */
   let isValidUnixNumber = /^[0-9]+$/.test(input)
 
